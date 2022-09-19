@@ -10,7 +10,7 @@ const searchFilter = (e) => {
              console.log('searchValue : ',searchValue);
             console.log('a[i]', a[i].innerText);
            
-            if (a[i].innerText.toUpperCase().startsWith(searchValue.toUpperCase())) {
+            if ((a[i].innerText.toUpperCase().indexOf(searchValue.toUpperCase()) > -1)) {
                    li[i].style.transition = 'all .4s ease-in'
                 li[i].style.display = ''
               
